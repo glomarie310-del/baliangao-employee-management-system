@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#1e3a8a">
+
+    <title>BEMS - Offline</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: #f1f5f9;
+            color: #172554;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 480px;
+            padding: 40px;
+            border-radius: 24px;
+            background: #ffffff;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            padding: 4px;
+            border-radius: 50%;
+            background: #ffffff;
+            object-fit: contain;
+            box-shadow: 0 8px 25px rgba(30, 58, 138, 0.18);
+        }
+
+        h1 {
+            margin: 24px 0 8px;
+            font-size: 28px;
+        }
+
+        p {
+            margin: 0;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        button {
+            margin-top: 28px;
+            padding: 13px 24px;
+            border: 0;
+            border-radius: 12px;
+            background: #1d4ed8;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <img
+            src="/images/baliangao-logo.png"
+            alt="Municipality of Baliangao"
+            class="logo"
+        >
+
+        <h1>You are offline</h1>
+
+        <p>
+            BEMS requires a secure internet or municipal network connection
+            to access employee records. Reconnect and try again.
+        </p>
+
+        <button type="button" onclick="window.location.reload()">
+            Try Again
+        </button>
+    </main>
+</body>
+</html>
